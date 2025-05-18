@@ -33,8 +33,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build . -t ghcr.io/KPI-DEVOPSGYAK/cubix/1/homework/app:springboot
-          docker push ghcr.io/KPI-DEVOPSGYAK/cubix/1/homework/app:springboot
+          docker build . -t ghcr.io/kpi-devopsgyak/cubix/1/homework/app:springboot
+          docker push ghcr.io/kpi-devopsgyak/cubix/1/homework/app:springboot
 
   verify:
     needs: docker
