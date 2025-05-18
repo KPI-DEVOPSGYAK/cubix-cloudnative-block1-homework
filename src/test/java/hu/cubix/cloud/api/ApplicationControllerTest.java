@@ -11,7 +11,7 @@ class ApplicationControllerTest {
 
     @Test
     void defaultMessage() {
-        String defaultMessage = "default";
+        String defaultMessage = "https://www.youtube.com/watch?v=treHcOZsmgk";
         ApplicationController controller = new ApplicationController(defaultMessage);
         CubixResponse response = controller.demoMessage("");
         assertThat(response.time(), is(notNullValue()));
