@@ -20,7 +20,7 @@ public class ApplicationController {
         this.defaultMessage = defaultMessage;
     }
 
-    @GetMapping("/cubix/test")
+    @GetMapping("/application/test")
     public CubixResponse demoMessage(@RequestParam(required = false, name = "message") String message) {
         if (!StringUtils.hasText(message)) {
             message = defaultMessage;
